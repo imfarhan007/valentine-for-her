@@ -10,22 +10,14 @@
 <style>
 body {
     margin: 0;
-    height: 100vh;
     font-family: 'Quicksand', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(135deg, #ffd6e8, #ffeef7);
-    overflow: hidden;
     text-align: center;
+    overflow-x: hidden;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 50px;
-    border-radius: 25px;
-    box-shadow: 0 20px 40px rgba(255, 150, 200, 0.3);
-    animation: fadeIn 2s ease;
+    padding: 60px 20px;
 }
 
 h1 {
@@ -36,7 +28,6 @@ h1 {
 p {
     font-size: 1.2rem;
     color: #555;
-    margin-bottom: 30px;
 }
 
 button {
@@ -55,7 +46,6 @@ button {
 }
 
 #yesBtn:hover {
-    background: #ff4f8b;
     transform: scale(1.1);
 }
 
@@ -64,13 +54,29 @@ button {
     position: absolute;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+.gallery {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 150, 200, 0.4);
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
 }
 
 .heart {
-    position: absolute;
+    position: fixed;
     color: #ffb6d9;
     font-size: 20px;
     animation: float 6s linear infinite;
@@ -86,15 +92,30 @@ button {
 <body>
 
 <div class="container">
-    <h1>Hi My Love 💗</h1>
+    <h1> My Little princess 💗</h1>
     <p>
-        Every day with you feels softer, brighter, and more beautiful 🌸  
-        You are my favorite person in the whole world.
-    </p>
-    <h2 style="color:#ff6fa5;">Will you be my Valentine? 💕</h2>
+        my biggest blessing, i say alhumdulillah to have a girl like you🌸 </p> 
+   </p>
+     <p>
+  my love for you only gets more every passing day.   </p>
 
-    <button id="yesBtn">Yes, of course 💖</button>
+     <p>
+Every picture of yours makes my whole world softer, brighter and i can't help but fall in love all over again.   </p>
+
+     <p>
+thank you for choosing me.
+    </p>
+
+    <h2 style="color:#ff6fa5;">Will you today and forever be my Valentine? 💕</h2>
+
+    <button id="yesBtn">Yes, always 💖</button>
     <button id="noBtn">No 😢</button>
+
+    <div class="gallery">
+        <img src="pic1.jpg">
+        <img src="pic2.jpg">
+        <img src="pic3.jpg">
+    </div>
 </div>
 
 <script>
@@ -112,7 +133,7 @@ yesBtn.addEventListener("click", function() {
     document.body.innerHTML = `
         <div style="text-align:center; margin-top:20%;">
             <h1 style="color:#ff4f8b; font-size:3rem;">You just made me the happiest person 🥹💗</h1>
-            <p style="font-size:1.5rem;">I can't wait to spend Valentine's Day with you 🌹</p>
+            <p style="font-size:1.5rem;">I love you endlessly 🌹</p>
         </div>
     `;
 });
@@ -132,3 +153,5 @@ setInterval(createHeart, 400);
 
 </body>
 </html>
+
+
